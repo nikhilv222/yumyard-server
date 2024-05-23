@@ -21,6 +21,7 @@ const deleteBevarage = router.post('/deletebevarage',async(req,res)=>{
   })
   
   const getBevarageById = router.post('/getbyid',async(req,res)=>{
+    //just adding comment for no reason
     const productId = req.body.productId;
     try{
       const product = await bevarageModel.findOne({_id:productId})
